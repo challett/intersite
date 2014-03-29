@@ -28,6 +28,6 @@
     <%= f.password_field :password_confirmation %>
   </div>
   <div class="actions">
-    <%= f.submit class: "btn btn-large btn-primary" %>
+    <%= f.submit class: "btn btn-large btn-primary" %>%>
   </div>
 <% end %>
