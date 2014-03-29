@@ -2,5 +2,16 @@
 
 <%= render 'form' %>
 
+<h2>Add an Interest:</h2>
+<%= form_for([@user, @user.interests.build]) do |f| %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
 <%= link_to 'Show', @user %> |
 <%= link_to 'Back', users_path %>
