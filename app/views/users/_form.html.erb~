@@ -12,22 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
+    <%= f.label :email %>
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :password %><br>
+    <%= f.label :password %>
     <%= f.password_field :password %>
   </div>
   <div class="field">
-    <%= f.label :password_confirmation, "Verify Password" %><br>
+    <%= f.label :password_confirmation, "Verify Password" %>
     <%= f.password_field :password_confirmation %>
   </div>
   <div class="actions">
-    <%= f.submit class: "btn btn-large btn-primary" %>%>
+    <%= f.submit class: "btn btn-large btn-primary" %>
   </div>
 <% end %>

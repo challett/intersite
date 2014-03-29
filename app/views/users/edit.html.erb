@@ -1,15 +1,22 @@
-<h1>Editing user</h1>
-
+<h1>Basic Info</h1>
 <%= render 'form' %>
+
+<h1>Interests</h1>
+<% @user.interests.each do |interest| %>
+    <%= interest.name %>
+<%= link_to 'Remove Interest', [interest.user, interest],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %><br>
+<% end %>
 
 <h2>Add an Interest:</h2>
 <%= form_for([@user, @user.interests.build]) do |f| %>
   <p>
-    <%= f.label :name %><br />
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-large btn-primary", :value => 'Add Interest' %>
   </p>
 <% end %>
 

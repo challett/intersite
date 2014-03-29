@@ -3,7 +3,13 @@ class InterestsController < ApplicationController
   end
   def create
     @user = User.find(params[:user_id])
-    @interest = @user.comments.create(params[:interest].permit(:name))
-    redirect_to user_path(@user)
+    @interest = @user.interests.create(params[:interest].permit(:name))
+    redirect_to edit_user_path(@user)
+  end
+  def destroy
+    @user = User.find(params[:user_id])
+    @interest = @user.comments.find(params[:id])
+    @interest.destroy
+    redirect_to edit_user_path(@user)
   end
 end
