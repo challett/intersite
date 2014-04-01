@@ -17,6 +17,11 @@ class User < ActiveRecord::Base
   def User.hash(token)
     Digest::SHA1.hexdigest(token.to_s)
   end
+  
+  def assign_interest(i)
+    interests.find_by_name(i) || ( self.interests << 
+      interests.find_or_create_by_name(:name => i)).last 
+  end
 
   private
 

@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
                     uniqueness: { case_sensitive: false } 
                     
   has_secure_password
-  has_and_belongs_to_many :interests, dependent: :destroy
+  has_and_belongs_to_many :interests
   
   def User.new_remember_token
     SecureRandom.urlsafe_base64
