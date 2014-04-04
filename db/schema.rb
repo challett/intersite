@@ -11,16 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140331235816) do
+ActiveRecord::Schema.define(version: 20140404164746) do
 
   create_table "interests", force: true do |t|
     t.string   "name"
-    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "interests", ["user_id"], name: "index_interests_on_user_id"
 
   create_table "interests_users", id: false, force: true do |t|
     t.integer "interest_id", null: false
@@ -32,7 +29,6 @@ ActiveRecord::Schema.define(version: 20140331235816) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "interests"
     t.string   "password_digest"
     t.string   "remember_token"
   end

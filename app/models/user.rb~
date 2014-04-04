@@ -17,6 +17,10 @@ class User < ActiveRecord::Base
   def User.hash(token)
     Digest::SHA1.hexdigest(token.to_s)
   end
+  
+  def user_params
+    params.require(:user).permit(:interest_ids => [])
+  end
 
   private
 

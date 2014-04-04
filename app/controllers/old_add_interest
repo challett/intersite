@@ -1,0 +1,9 @@
+<%= form_for([@user, @user.interests.build]) do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit class: "btn btn-large btn-primary", :value => 'Add Interest' %>
+  </p>
+<% end %>

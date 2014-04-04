@@ -7,14 +7,9 @@
 <% end %>
 
 <h2>Add an Interest:</h2>
-<%= form_for([@user, @user.interests.build]) do |f| %>
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.submit class: "btn btn-large btn-primary", :value => 'Add Interest' %>
-  </p>
+<%= simple_form_for @user do |f| %>
+	<%= f.association :interests, :as => :check_boxes %>
+	<%= f.button :submit %>
 <% end %>
 
 <%= link_to 'Show', @user %> |

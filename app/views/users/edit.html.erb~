@@ -7,7 +7,10 @@
 <% end %>
 
 <h2>Add an Interest:</h2>
-
+<%= simple_form_for @user do |f| %>
+	<%= f.association :interests %>
+	<%= f.button :submit %>
+<% end %>
 
 <%= link_to 'Show', @user %> |
 <%= link_to 'Back', users_path %>
