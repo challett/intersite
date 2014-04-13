@@ -11,6 +11,16 @@
 	<%= f.association :interests, :as => :check_boxes %>
 	<%= f.button :submit %>
 <% end %>
+  <h2>Interest Not listed?</h2>
+<%= form_for([@user, @user.interests.build]) do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit class: "btn btn-large btn-primary", :value => 'Create New Interest' %>
+  </p>
+<% end %>
 
 <%= link_to 'Show', @user %> |
 <%= link_to 'Back', users_path %>
