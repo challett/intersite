@@ -9,7 +9,7 @@
 
 <%= simple_form_for @user do |f| %>
 	<%= f.association :interests, :as => :check_boxes %>
-	<%= f.button :submit %>
+	<%= f.submit class: "btn btn-large btn-primary" %>
 <% end %>
 
   <h2>Interest Not listed?</h2>

@@ -1,0 +1,6 @@
+<h1>Interests</h1>
+<body>
+<% @interests.each do |inter| %>
+  <%= inter.name %><%= link_to 'Destroy', inter, method: :delete %><br>
+<% end %>
+</body>

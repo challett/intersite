@@ -1,7 +1,9 @@
 Intersite::Application.routes.draw do
+  get "interests/index"
   resources :users do
     resources :interests
   end
+  resources :interests
   resources :sessions, only: [:new, :create, :destroy]
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
