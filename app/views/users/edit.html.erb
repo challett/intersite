@@ -1,16 +1,17 @@
 <h1>Basic Info</h1>
 <%= render 'form' %>
-
+<!--
 <h1>Interests</h1>
 <% @user.interests.each do |interest| %>
     <%= interest.name %><br>
 <% end %>
+-->
 
-<h2>Add an Interest:</h2>
 <%= simple_form_for @user do |f| %>
 	<%= f.association :interests, :as => :check_boxes %>
 	<%= f.button :submit %>
 <% end %>
+
   <h2>Interest Not listed?</h2>
 <%= form_for([@user, @user.interests.build]) do |f| %>
   <p>
