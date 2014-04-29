@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+  
+<!-- FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Kreon:700' rel='stylesheet' type='text/css'>
+        
     <title>intersite</title>
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
@@ -20,31 +24,26 @@
       <%= link_to "intersite", root_path, id: "logo" %>
       <% end %>
       <nav>
-        <ul class="nav pull-right">
+        <ul class="nav navbar-nav navbar-right">
           <% if signed_in? %>
-          <li><%= link_to "Home", current_user %></li>
-          <li><%= link_to "Help", '#' %></li>
-          
-            <li><%= link_to "Users", users_path %></li>
+          <li> <%= link_to "Home", current_user %> </li>
+          <li> <%= link_to "Help", '#' %> </li>
+          <li> <%= link_to "Users", users_path %> </li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 Account <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><%= link_to "Profile", current_user %></li>
-                <li><%= link_to "Settings", '#' %></li>
-                <li class="divider"></li>
-                <li>
-                  <%= link_to "Sign out", signout_path, method: "delete" %>
-                </li>
-              </ul>
-            </li>
+                <li> <%= link_to "Profile", current_user %> </li>
+                <li> <%= link_to "Settings", '#' %> </li>
+                <li class="divider"> </li>
+                <li> <%= link_to "Sign out", signout_path, method: "delete" %> </li>
+                </ul>
           <% else %>
-            <li><%= link_to "Home", current_user %></li>
-            <li><%= link_to "Help", '#' %></li>
-            <li><%= link_to "Sign in", signin_path %></li>
+            <li> <%= link_to "Home", current_user %> </li>
+            <li> <%= link_to "Help", '#' %> </li>
+            <li> <%= link_to "Sign in", signin_path %> </li>
           <% end %>
-        </ul>
       </nav>
     </div>
   </div>

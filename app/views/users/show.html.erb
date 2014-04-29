@@ -1,14 +1,16 @@
 <div class="row">
   <aside class="span4">
     <section>
-      <h1>
+      <h2><strong>
+      <div class="jumbotron">
         <%= gravatar_for @user %><br>
-        <%= @user.name %>
-      </h1>
+        <%= @user.name %> 
+        </div>
+      </strong></h2>
     </section>
   </aside>
 </div>
-<p id="notice"><%= notice %></p>
+<%= content_tag(:div, notice, class: "alert alert-success alert-dismissable") if notice != nil %>
 <h2>Basic Info</h2>
 
 <p>

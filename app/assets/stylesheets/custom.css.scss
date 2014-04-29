@@ -65,3 +65,37 @@ aside {
   float: left;
   margin-right: 10px;
 }
+
+
+
+/* Background Home Page */
+body { 
+     background: url(http://wallpoper.com/images/00/26/06/21/gaussian-blur_00260621.jpg) no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
+
+.navbar .brand {
+    max-height: 40px;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.form-control {
+    width:250px;
+}
+
+
+/* TEXT STYLING */
+
+MainTitle {
+font-family: 'Kreon', 'serif';
+font-size: 85px;
+padding-top: 50px;
+padding-bottom: 20px;
+}
+

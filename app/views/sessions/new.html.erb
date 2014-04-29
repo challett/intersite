@@ -1,14 +1,16 @@
-<h1>Sign in</h1>
+<center>
+
+<MainTitle> Sign In </MainTitle>
 
 <div class="row">
   <div class="span6 offset3">
-    <%= form_for(:session, url: sessions_path) do |f| %>
-
-      <%= f.label :email %>
-      <%= f.text_field :email %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+    <%= simple_form_for(:session, url: sessions_path) do |f| %>
+        
+    <br>
+      <%= f.text_field :email, :placeholder => "Email" %>
+      <br>
+      <%= f.password_field :password, :placeholder => "Password" %>
+      <br>
       <br>
       <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
     <% end %>
@@ -16,3 +18,5 @@
     <p>New user? <%= link_to "Sign up now!", '#' %></p>
   </div>
 </div>
+
+</center>

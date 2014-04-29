@@ -12,9 +12,10 @@ class InterestsController < ApplicationController
     @interest = @user.interests.create(params[:interest].permit(:name))
     redirect_to edit_user_path(@user)
   end
+  
   def destroy
     @interest = Interest.find(params[:id])
     @interest.destroy
-    redirect_to root_path
+    redirect_to interests_path
   end
 end
