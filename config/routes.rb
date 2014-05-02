@@ -1,10 +1,15 @@
 Intersite::Application.routes.draw do
+  get "welcome/index"
   get "interests/index"
   resources :users do
     resources :interests
   end
   resources :interests
   resources :sessions, only: [:new, :create, :destroy]
+  resources :school
+  resources :workplace
+  resources :location
+  
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
 
@@ -12,7 +17,7 @@ Intersite::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'users#new'
+  root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

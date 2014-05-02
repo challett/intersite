@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140404164746) do
+ActiveRecord::Schema.define(version: 20140502211427) do
 
   create_table "interests", force: true do |t|
     t.string   "name"
@@ -22,6 +22,37 @@ ActiveRecord::Schema.define(version: 20140404164746) do
   create_table "interests_users", id: false, force: true do |t|
     t.integer "interest_id", null: false
     t.integer "user_id",     null: false
+  end
+
+  create_table "locations", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "schools", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_locations", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "location_id"
+  end
+
+  create_table "user_schools", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "school_id"
+  end
+
+  create_table "user_workplaces", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "location_id"
   end
 
   create_table "users", force: true do |t|
@@ -35,5 +66,10 @@ ActiveRecord::Schema.define(version: 20140404164746) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
+
+  create_table "workplaces", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

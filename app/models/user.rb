@@ -9,6 +9,9 @@ class User < ActiveRecord::Base
                     
   has_secure_password
   has_and_belongs_to_many :interests
+  has_many :workplaces, :through => :user_workplaces
+  has_many :schools, :through => :user_schools
+  has_one :location, :through => :user_locations
   
   def User.new_remember_token
     SecureRandom.urlsafe_base64
