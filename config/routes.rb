@@ -6,9 +6,9 @@ Intersite::Application.routes.draw do
   end
   resources :interests
   resources :sessions, only: [:new, :create, :destroy]
-  resources :school
-  resources :workplace
-  resources :location
+  resources :schools
+  resources :workplaces
+  resources :locations
   
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
