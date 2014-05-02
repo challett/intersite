@@ -70,11 +70,12 @@ aside {
 
 /* Background Home Page */
 body { 
-     background: url(http://wallpoper.com/images/00/26/06/21/gaussian-blur_00260621.jpg) no-repeat center center fixed; 
+     /* background: url(http://www.canaltownphoto.com/wp-content/uploads/2013/11/bg12.jpg) no-repeat center center fixed; 
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
-     background-size: cover;
+     background-size: cover; */
+     background-color: #8D8D8D;
 }
 
 
@@ -93,9 +94,60 @@ body {
 /* TEXT STYLING */
 
 MainTitle {
-font-family: 'Kreon', 'serif';
-font-size: 85px;
-padding-top: 50px;
-padding-bottom: 20px;
+  font-family: 'Pacifico', cursive;  
+  font-size: 85px;
+  padding-top: 50px;
+}
+
+UserName {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+SubContext {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+
+/* User Page Top Info */
+
+#profile { 
+  width: 550px; 
+  height: 150px;
+  margin: 0px auto; 
+  padding: 0px; 
+  border-radius: 4px;
+  background-color: white; 
+  -moz-box-shadow:    0 0 7px black; 
+  -webkit-box-shadow: 0 0 7px black; 
+  box-shadow:         0 0 7px black;
+ } 
+
+#profile-wrap {
+  padding-top: 260px;
+  top: 0;
+  left: 0;
+  height: 350px;
+  position: absolute;
+  width: 100%;
+  background: url(http://www.freestockphotos.name/wallpaper-original/wallpapers/concert-of-dj-tiesto-1624.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:   cover;
+  -moz-box-shadow:    inset 0px 0px 10px #000000;
+  -webkit-box-shadow: inset 0px 0px 10px #000000;
+  box-shadow:         inset 0px 0px 10px #000000;
+}
+
+#left-list {
+  width: 200px;
 }
 

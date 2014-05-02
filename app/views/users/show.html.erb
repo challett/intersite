@@ -1,30 +1,100 @@
-<div class="row">
-  <aside class="span4">
-    <section>
-      <h2><strong>
-      <div class="jumbotron">
-        <%= gravatar_for @user %><br>
-        <%= @user.name %> 
-        </div>
-      </strong></h2>
-    </section>
-  </aside>
+<div id="profile-wrap">
+  <div id="profile">
+    <%= gravatar_for @user %> 
+    <UserName> <%= @user.name %> </UserName> <br>
+    <p> Goes to McMaster University </p>
+    <p> Works at Microsoft Corporation </p>
+    <i><b> Toronto, Ontario, Canada </b></i>
+  </div>
 </div>
+
+
+
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+
+
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="list-group">
+      <a href="#" class="list-group-item">
+        <span class="badge">98</span>
+        Friends
+      </a> 
+      <a href="#" class="list-group-item">
+        <span class="badge">107</span>
+        Interests
+      </a>
+      <a href="#" class="list-group-item">
+        <span class="badge">9</span>
+        Activities
+      </a>
+    </div>
+    <div class="list-group">
+        <li class="list-group-item">Trending</li>
+      <a href="#" class="list-group-item">
+        <span class="badge">14</span>
+        Daft Punk
+      </a> 
+      <a href="#" class="list-group-item">
+        <span class="badge">12</span>
+        Programming
+      </a>
+      <a href="#" class="list-group-item">
+        <span class="badge">9</span>
+        Hockey
+      </a>
+      <a href="#" class="list-group-item">
+        <span class="badge">8</span>
+        Hiking
+      </a>
+      <a href="#" class="list-group-item">
+        <span class="badge">5</span>
+        Studying
+      </a>
+    </div>
+  </div>
+  <div class="col-md-6">
+<!-- MIDDLE COLUMN -->
+    <h2>Basic Info</h2>
+    <p>
+      <strong>Email:</strong>
+      <%= @user.email %>
+    </p>
+    <h2> My Interests</h2>
+    <% @user.interests.each do |interest| %>
+      <p>
+        <%= interest.name %>
+      </p>
+    <% end %>
+  </div> 
+  <div class="col-md-3">
+<!-- RIGHT COLUMN -->
+  </div> 
+</div>
+
+
+
 <%= content_tag(:div, notice, class: "alert alert-success alert-dismissable") if notice != nil %>
-<h2>Basic Info</h2>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<h2>Interests</h2>
-<% @user.interests.each do |interest| %>
-  <p>
-    <strong>Name:</strong>
-    <%= interest.name %>
-  </p>
-<% end %>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

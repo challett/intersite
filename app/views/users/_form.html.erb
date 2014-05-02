@@ -13,9 +13,9 @@
 
 
   <div class="field">
-    <%= f.text_field :name, :placeholder => "Name"%>
+    <%= f.text_field :name, :placeholder => "First Last"%>
   </div>
-  
+
   <div class="field">
     <%= f.text_field :email, :placeholder => "Email"%>
   </div>
@@ -27,11 +27,12 @@
   <div class="field">
     <%= f.password_field :password_confirmation, :placeholder => "Confirm Password"%>
   </div>
-  
+
   </br>
   
   <div class="actions">
     <%= f.submit class: "btn btn-large btn-primary" %>
   </div>
-  
+
+
 <% end %>
