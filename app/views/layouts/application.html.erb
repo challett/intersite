@@ -22,11 +22,11 @@
     <header class="navbar navbar-fixed-top navbar-custom">
       <div class="navbar-inner">
         <div class="container">
-          <%= link_to "Findme", root_path, id: "logo" %>
+          <%= link_to "Findme", root_url, id: "logo" %>
           <nav>
             <ul class="nav navbar-nav navbar-right">
-              <li> <%= link_to "Home", current_user %> </li>
-              <li> <%= link_to "Help", '#' %> </li>
+              <li> <%= link_to "Home", root_url %> </li>
+              <li> <%= link_to "Help", help_path %> </li>
               <% if signed_in? %>
               <li> <%= link_to "Users", users_path %> </li>
                 <li id="fat-menu" class="dropdown">
@@ -44,7 +44,7 @@
 
                 <div class="pull-right navbar-text-img">
                   <ul class="pull-right">
-                    <%= gravatar_for current_user %>
+                    <%= link_to gravatar_for(current_user), current_user %>
                   </ul>
                 </div>
 
