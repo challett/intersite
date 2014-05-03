@@ -1,7 +1,11 @@
 <center>
-
+<% if signed_in? %>
+  <script type="text/javascript">
+    window.location.href="/"
+  </script>
+<% end %>
 <MainTitle> Findme </MainTitle> <br>
-<SubContext> sign in as new user </SubContext>
+<SubContext> Create an account </SubContext>
 <br>
 <br>
 

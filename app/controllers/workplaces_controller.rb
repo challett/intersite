@@ -8,7 +8,7 @@ class WorkplacesController < ApplicationController
   end
   
   def create
-    @workplace = @user.workplaces.create(params[:workplace].permit(:name))
+    @workplace = @user.workplaces.create(workplace_params)
   end
   
   def destroy
@@ -16,4 +16,9 @@ class WorkplacesController < ApplicationController
     @workplace.destroy
     redirect_to workplaces_path
   end
+  
+  private
+    def workplace_params
+      params.require(:workplace).permit(:name)
+    end
 end

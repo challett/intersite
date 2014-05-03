@@ -4,15 +4,27 @@
     <UserName> <%= @user.name %> </UserName> <br>
     <p> 
       <span class="glyphicon glyphicon-inbox"> </span>
-      Goes to McMaster University
+      <% if @user.schools.first != nil %>
+        Goes to <%= @user.schools.first.name %>
+      <% else %>
+        School Unknown
+    <% end %>    
     </p>
     <p> 
       <span class="glyphicon glyphicon-briefcase"> </span>
-      Works at Microsoft Corporation 
+      <% if @user.workplaces.first != nil %>
+        Works at <%= @user.workplaces.first.name %>
+      <% else %>
+        Workplace Unknown
+    <% end %>  
     </p>
     <i><b> 
       <span class="glyphicon glyphicon-globe"> </span>
-      Toronto, Ontario, Canada 
+      <% if @user.locations.first != nil %>
+        <%= @user.locations.first.name %>
+      <% else %>
+        Location Unknown
+    <% end %>
     </b></i>
   </div>
 </div>
@@ -62,50 +74,19 @@
     </div>
     <div class="list-group">
         <li class="list-group-item">Trending</li>
+      <% (1..10).each do |f| %>
       <a href="#" class="list-group-item">
-        <span class="badge">78</span>
-        Daft Punk
-      </a> 
-      <a href="#" class="list-group-item">
-        <span class="badge">63</span>
-        Programming
+        <span class="badge">##</span>
+        Interest Name
       </a>
-      <a href="#" class="list-group-item">
-        <span class="badge">62</span>
-        Hockey
-      </a>
-      <a href="#" class="list-group-item">
-        <span class="badge">55</span>
-        Hiking
-      </a>
-      <a href="#" class="list-group-item">
-        <span class="badge">49</span>
-        Studying
-      </a>
-      <a href="#" class="list-group-item">
-        <span class="badge">32</span>
-        Toronto Raptors
-      </a> 
-      <a href="#" class="list-group-item">
-        <span class="badge">20</span>
-        iPhone 6
-      </a>
-      <a href="#" class="list-group-item">
-        <span class="badge">13</span>
-        Electric Guitar
-      </a>
-      <a href="#" class="list-group-item">
-        <span class="badge">7</span>
-        Gardening
-      </a>
-      <a href="#" class="list-group-item">
-        <span class="badge">5</span>
-        Studying
-      </a>
+      <% end %> 
     </div>
   </div>
+  
+  
   <div class="col-md-6">
 <!-- MIDDLE COLUMN -->
+    <div class="jumbotron">
     <h2>Basic Info</h2>
     <p>
       <strong>Email:</strong>
@@ -120,6 +101,7 @@
     <%= link_to 'Edit', edit_user_path(@user) %> |
     <%= link_to 'Back', users_path %>
   </div> 
+  </div>
   <div class="col-md-3">
 <!-- RIGHT COLUMN -->
   </div> 

@@ -1,5 +1,9 @@
 <center>
-
+<div class="alert alert-danger">
+  <% flash.each do |key, value| %>
+    <%= value %>
+  <% end %>
+</div>
 <MainTitle> Sign In </MainTitle>
 
 <div class="row">
@@ -10,7 +14,6 @@
       <%= f.text_field :email, :placeholder => "Email" %>
       <br>
       <%= f.password_field :password, :placeholder => "Password" %>
-      <br>
       <br>
       <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
     <% end %>
