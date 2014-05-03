@@ -100,9 +100,9 @@ MainTitle {
 }
 
 UserName {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cabin Condensed', sans-serif;
   font-size: 40px;
-  font-style: italic;
+  font-style: bold;
   padding-top: 10px;
   padding-bottom: 15px;
 }
@@ -158,6 +158,10 @@ SubContext {
 .navbar-custom {
   background-color: #00cccc;
   border-color: #00abab;
+  vertic-align: middle;
+  -moz-box-shadow:    0 0 10px black; 
+  -webkit-box-shadow: 0 0 10px black; 
+  box-shadow:         0 0 10px black;
 }
 .navbar-custom .navbar-brand {
   color: #ffffff;
@@ -257,19 +261,10 @@ SubContext {
 
 /* Nabvar Gravatar */
 
-.navbar-text img {
-  max-height:22px;
-  width:auto;
-  vertical-align: middle;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  padding-left: 0px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size:   cover;
-  -moz-box-shadow:    inset 0px 0px 10px #000000;
-  -webkit-box-shadow: inset 0px 0px 10px #000000;
-  box-shadow:         inset 0px 0px 10px #000000;
+.navbar-text-img img {
+  max-height: 50px;
+  width: auto;
+  vertical-align: center;
+  padding: 5px;
+
 }
