@@ -1,3 +1,27 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#WelcomeWrap {
+  padding-top: 21.1%;
+  top: 0;
+  left: 0;
+  height: 90%;
+  position: absolute;
+  width: 100%;
+  background: url(http://www.freestockphotos.name/wallpaper-original/wallpapers/concert-of-dj-tiesto-1624.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:   cover;
+  -moz-box-shadow:    inset 0px 0px 10px #000000;
+  -webkit-box-shadow: inset 0px 0px 10px #000000;
+  box-shadow:         inset 0px 0px 10px #000000;
+}
+
+
+/* FONT STYLES */
+Slogan {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
