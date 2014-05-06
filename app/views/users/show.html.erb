@@ -1,11 +1,6 @@
 <div id="profile-wrap">
   <div id="profile">
-
-    <div id="UserGrav">
-      <%= gravatar_for @user %> 
-    </div>
-
-
+    <%= gravatar_for @user %> 
     <UserName> <%= @user.name %> </UserName> <br>
     <p> 
       <span class="glyphicon glyphicon-inbox"> </span>
@@ -111,6 +106,3 @@
 <!-- RIGHT COLUMN -->
   </div> 
 </div>
-
-
-
