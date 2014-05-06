@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
 #WelcomeWrap {
   padding-top: 21.1%;
   top: 0;
@@ -24,9 +23,9 @@
 
 
 #WelcomeLogo {
-  padding-top: 192px;
-  -webkit-filter: drop-shadow(0px 0px 5px #000000); 
-  filter: drop-shadow(0px 0px 5px #000000);
+  padding-top: 293px;
+  /* -webkit-filter: drop-shadow(0px 0px 5px #000000); 
+  filter: drop-shadow(0px 0px 5px #000000); */
 }
 
 
@@ -41,6 +40,7 @@ Slogan {
 /* CAROUSEL */
 
 #myCarousel {
+  z-index: -99;
   width: 100%;
   top: 0;
   left: 0;
@@ -58,39 +58,24 @@ Slogan {
   background: url(/assets/WelcomeCarousel/Concert.png) no-repeat center center fixed;
   background-size: cover;
   -moz-background-size: cover;
-  -moz-box-shadow:    inset 0px 0px 10px #000000;
-  -webkit-box-shadow: inset 0px 0px 10px #000000;
-  shadow:             inset 0px 0px 10px #000000;
 }
 .ad2 {
   background: url(/assets/WelcomeCarousel/Hiking.jpg) no-repeat center center fixed;
   background-size: cover;
   -moz-background-size: cover;
-  -moz-box-shadow:    inset 0px 0px 10px #000000;
-  -webkit-box-shadow: inset 0px 0px 10px #000000;
-  shadow:             inset 0px 0px 10px #000000;
 }
 .ad3 {
   background: url(/assets/WelcomeCarousel/MovieTheater.jpg) no-repeat center center fixed;
   background-size: cover;
   -moz-background-size: cover;
-  -moz-box-shadow:    inset 0px 0px 10px #000000;
-  -webkit-box-shadow: inset 0px 0px 10px #000000;
-  shadow:             inset 0px 0px 10px #000000;
 }
 .ad4 {
   background: url(/assets/WelcomeCarousel/Squash.jpg) no-repeat center center fixed;
   background-size: cover;
   -moz-background-size: cover;
-  -moz-box-shadow:    inset 0px 0px 10px #000000;
-  -webkit-box-shadow: inset 0px 0px 10px #000000;
-  shadow:             inset 0px 0px 10px #000000;
 }
 .ad5 {
   background: url(/assets/WelcomeCarousel/Hockey.jpg) no-repeat center center fixed;
   background-size: cover;
   -moz-background-size: cover;
-  -moz-box-shadow:    inset 0px 0px 10px #000000;
-  -webkit-box-shadow: inset 0px 0px 10px #000000;
-  shadow:             inset 0px 0px 10px #000000;
 }

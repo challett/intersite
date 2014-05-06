@@ -2,30 +2,6 @@
   <div id="profile">
     <%= gravatar_for @user %> 
     <UserName> <%= @user.name %> </UserName> <br>
-    <p> 
-      <span class="glyphicon glyphicon-inbox"> </span>
-      <% if @user.schools.first != nil %>
-        Goes to <%= @user.schools.first.name %>
-      <% else %>
-        School Unknown
-    <% end %>    
-    </p>
-    <p> 
-      <span class="glyphicon glyphicon-briefcase"> </span>
-      <% if @user.workplaces.first != nil %>
-        Works at <%= @user.workplaces.first.name %>
-      <% else %>
-        Workplace Unknown
-    <% end %>  
-    </p>
-    <i><b> 
-      <span class="glyphicon glyphicon-globe"> </span>
-      <% if @user.locations.first != nil %>
-        <%= @user.locations.first.name %>
-      <% else %>
-        Location Unknown
-    <% end %>
-    </b></i>
   </div>
 </div>
 
@@ -89,8 +65,31 @@
     <div class="jumbotron">
     <h2>Basic Info</h2>
     <p>
-      <strong>Email:</strong>
+
+      <strong>Email</strong>
       <%= @user.email %>
+    <br>
+      <strong>Attended</strong>
+      <% if @user.schools.first != nil %>
+        <%= @user.schools.first.name %>
+      <% else %>
+        Unknown
+      <% end %> 
+    <br>
+      <strong>Work at</strong>
+      <% if @user.workplaces.first != nil %>
+        <%= @user.workplaces.first.name %>
+      <% else %>
+        Unknown
+      <% end %> 
+    <br>
+      <strong>Live in</strong>
+      <% if @user.locations.first != nil %>
+        <%= @user.locations.first.name %>
+      <% else %>
+        Unknown
+      <% end %>
+
     </p>
     <h2> My Interests</h2>
     <% @user.interests.each do |interest| %>
