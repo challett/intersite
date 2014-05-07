@@ -5,4 +5,5 @@ New social network site structure in the works.
 Major languages include HTML, CSS, Javascript, Bootstrap implementations and Ruby on Rails for server (AMAZON) managment.
 
 Connor Hallett: server upkeep, manamgent, upkeep and creation.
+
 Nicolas Lelievre: site design and user interface.
