@@ -4,21 +4,17 @@
 
 
 #WelcomeWrap {
-  padding-top: 21.1%;
-  top: 0;
+  z-index: -99;
+  top: 520px;
   left: 0;
-  height: 90%;
+  height: 60%;
   position: absolute;
   width: 100%;
-  /* background: url(http://www.freestockphotos.name/wallpaper-original/wallpapers/concert-of-dj-tiesto-1624.jpg) no-repeat center center fixed;  */
-  background: url(/assets/WelcomeCarousel/People-At-Concert.png) no-repeat center center fixed;
+  background: url(http://www.blirk.net/wallpapers/1920x1080/gradient-wallpaper-3.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size:   cover;
-  -moz-box-shadow:    inset 0px 0px 10px #000000;
-  -webkit-box-shadow: inset 0px 0px 10px #000000;
-  shadow:         inset 0px 0px 10px #000000;
 }
 
 

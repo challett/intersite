@@ -1,3 +1,354 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* TEXT STYLING */
+SubUser {
+  font-family: 'Yellowtail', cursive;
+  float: center;
+  margin-right: 10px;
+  font-size: 3.1em;
+  color: white;
+  letter-spacing: 0px;
+  line-height: 1;
+}
+FavIntsName {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	line-height: 40px;
+}
+FavIntsBadge {
+	font-size: 12px;
+	line-height: 40px;
+}
+FavIntsBadge>.badge {
+	vertical-align: middle;
+}
+FavIntsInfoNotif {
+	vertical-align: middle;
+	line-height: 40px;
+	font-size: 12px;
+}
+FavIntsInfoNotif .label:hover {
+  background: #FFAF40;
+}
+MainTitle {
+  font-family: 'Pacifico', cursive;  
+  font-size: 85px;
+  padding-top: 50px;
+}
+UserName {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 40px;
+  font-style: bold;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+SubContext {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+/* FAVORITE INTERESTS */
+
+#FavInts {
+  top: 0;
+  left: 0;
+  width: 350px; 
+  height: 160px;
+  margin: 0px auto; 
+  padding: 0px; 
+  border-radius: 4px;
+  background-color: white; 
+}
+.FavIntsImg1 {
+  width: 100%;
+  height: 120px;
+  background-image: url("http://www.youredm.com/wp-content/uploads/2014/03/4784931.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+.FavIntsImg2 {
+  width: 100%;
+  height: 120px;
+  background-image: url("http://www.saynotes.com/wp-content/uploads/2012/07/the-dark-knight-rises-groupshot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+.FavIntsImg3 {
+  width: 100%;
+  height: 120px;
+  background-image: url("http://www.cbc.ca/sports-content/hockey/opinion/assets_c/2013/10/620-reimer-main-thumb-620xauto-330043.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+.FavIntsImg4 {
+  width: 100%;
+  height: 120px;
+  background-image: url("https://www.ocoos.com/images/product/509414141eaa4_skydive01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+.FavIntsImg5 {
+  width: 100%;
+  height: 120px;
+  background-image: url("http://2.bp.blogspot.com/-9ZIvA-Op7GA/UegnpYvMZnI/AAAAAAAAAT0/ExO8dwICvOA/s1600/Running+Shoes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+
+
+
+
+
+/* User Page Top Info */
+
+#profile { 
+  width: 550px; 
+  height: 150px;
+  margin: 0px auto; 
+  padding: 0px; 
+  border-radius: 4px;
+  background-color: white; 
+  -moz-box-shadow:    0 0 7px black; 
+  -webkit-box-shadow: 0 0 7px black; 
+  box-shadow:         0 0 7px black;
+} 
+#profile-wrap {
+  padding-top: 260px;
+  top: 0;
+  left: 0;
+  height: 350px;
+  position: absolute;
+  width: 100%;
+  background: url(http://static.simpledesktops.com/uploads/desktops/2014/04/04/floppies0005.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:   cover;
+  -moz-box-shadow:    inset 0px 0px 10px #000000;
+  -webkit-box-shadow: inset 0px 0px 10px #000000;
+  box-shadow:         inset 0px 0px 10px #000000;
+}
+#left-list {
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SIGN IN TEST MOCKUP */
+
+
+.sign-in {
+    background: #383b4c;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: inline-block;
+    padding-bottom: 0px;
+    
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    }
+    
+.sign-in h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+    }
+    
+.form-control {
+    background: none;
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px dashed #CCC;
+    padding-left: 20px;
+    color: #fff;
+    }
+    
+.form-control:focus {
+    box-shadow: none;
+    }
+    
+.form-group i {
+    margin-bottom: -23px;
+    color: #999;
+    }
+    
+    
+input[type=checkbox] {
+    visibility: hidden;
+}
+ 
+/* SQUARED FOUR */
+.squaredFour {
+    width: 150px;    
+    margin: 20px 0px;
+    position: relative;
+    display: inline-block;
+}
+ 
+.squaredFour label {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    border-radius: 4px;
+ 
+    -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    background: #fcfff4;
+ 
+    background: #fcfff4;
+}
+ 
+.squaredFour label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 6px;
+    left: 6px;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+ 
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+ 
+.squaredFour label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.5;
+}
+ 
+.squaredFour input[type=checkbox]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+ 
+.squaredFour p {
+    margin-left: 40px;
+    color: #fff;
+    float: right;
+    }
+    
+    
+.sign-in .btn {
+    margin-top: 15px;
+    padding: 6px 30px;
+    background: #649fd7;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-right: 20px;
+    }
+    
+.sign-in .btn:hover {
+    background: #558DC1;
+    }
+    
+    
+.social {
+    width: 100%;
+    height: auto;
+    }
+    
+.social-twt {
+    width: 54.6%;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    float: left;
+    margin-left: -20px;
+    background: #00acee;
+    font-size: 16px;
+    line-height: 40px;
+    
+    -webkit-border-bottom-left-radius: 6px;
+-moz-border-radius-bottomleft: 6px;
+border-bottom-left-radius: 6px;
+    }
+    
+.social-twt:hover {
+    background: #0099D1;
+    }
+    
+.social i {
+    margin-right: 8px;
+    }
+    
+.social-fb {
+    width: 54.8%;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    float: right;
+    margin-right: -20px;
+    background: #45649a;
+    font-size: 16px;
+    line-height: 40px;
+    
+    -webkit-border-bottom-right-radius: 6px;
+-moz-border-radius-bottomright: 6px;
+border-bottom-right-radius: 6px;
+    }
+    
+.social-fb:hover {
+    background: #3C598C;
+    }
+    
+.social-twt span, .social-fb span {
+    font-weight: bold;
+    }
