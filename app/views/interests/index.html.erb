@@ -1,6 +1,290 @@
-<h1>Interests</h1>
-<body>
-<% @interests.each do |inter| %>
-  <%= inter.name %><%= link_to 'Destroy', inter, method: :delete %><br>
-<% end %>
-</body>
+<!-- JavaScript -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<!-- Custom JavaScript for the Menu Toggle -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("active");
+});
+</script>
+
+
+
+<!-- SIDEBAR -->
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#">Start Bootstrap</a>
+            </li>
+
+		    <center>
+			    <div class="form-group">
+			        <input type="text" class="form-control" id="interest_search" placeholder="Search Interests">
+			    </div>
+			</center>
+
+            <li>
+				<a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#teams">
+					Teams
+				</a>
+				<div id="teams" class="collapse out">
+					<ul class="nav nav-list">
+					  <li class="active"><a href="#">Hockey</a></li>
+					  <li><a href="#">Basketball</a></li>
+					  <li><a href="#">Baseball</a></li>
+					</ul>
+				</div>
+			</li>
+
+            <li><a href="#">Sports</a>
+
+
+			<li>
+				<a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#fooddrink">
+					Food and Drink
+				</a>
+				<div id="fooddrink" class="collapse out">
+					<ul class="nav nav-list">
+					  <li class="active"><a href="#">Breakfast</a></li>
+					  <li><a href="#">Lunch</a></li>
+					  <li><a href="#">Dinner</a></li>
+					  <li><a href="#">Drinks</a></li>
+					  <li><a href="#">Coffee</a></li>
+					</ul>
+				</div>
+			</li>
+
+
+            </li>
+            <li><a href="#">People</a>
+            </li>
+            <li><a href="#">Music</a>
+            </li>
+            <li><a href="#">Movies</a>
+            </li>
+            <li><a href="#">Books</a>
+            </li>
+            <li><a href="#">Arts</a>
+            </li>
+            <li><a href="#">Studying</a>
+            </li>
+            <li><a href="#">Gaming</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- Page content -->
+    
+	<br>
+
+
+	<div class="row">
+	    <div class="col-md-4">
+
+	      <div id="Ints">
+	        <div class="IntsImg1">
+	          <div class="col-md-2">
+	          </div>
+	          <div class="col-md-8">
+	          </div>
+	          <div class="col-md-2">
+	          </div>
+	        </div>
+	        <div class="col-md-3">
+	          <!-- LEFT INFO COLUMN -->
+	          <IntsInfoNotif>
+	            <span class="label label-info">Music</span>
+	          </IntsInfoNotif>
+	        </div>
+	        <div class="col-md-6">
+	          <!-- MIDDLE INFO COLUMN -->
+	          <center><IntsName>deaudmau5</IntsName></center>
+	        </div>
+	        <div class="col-md-3">
+	          <!-- RIGHT INFO COLUMN -->
+	          <IntsBadge>
+	            <span class="badge">683</span>
+	          </IntsBadge>
+	        </div>
+	      </div>
+
+	      <br>
+
+	      <div id="Ints">
+	        <div class="IntsImg4">
+	          <div class="col-md-2">
+	          </div>
+	          <div class="col-md-8">
+	          </div>
+	          <div class="col-md-2">
+	          </div>
+	        </div>
+	        <div class="col-md-3">
+	          <!-- LEFT INFO COLUMN -->
+	          <IntsInfoNotif>
+	            <span class="label label-info">Extreme</span>
+	          </IntsInfoNotif>
+	        </div>
+	        <div class="col-md-6">
+	          <!-- MIDDLE INFO COLUMN -->
+	          <center><IntsName>Sky Diving</IntsName></center>
+	        </div>
+	        <div class="col-md-3">
+	          <!-- RIGHT INFO COLUMN -->
+	          <IntsBadge>
+	            <span class="badge">967</span>
+	          </IntsBadge>
+	        </div>
+	      </div>
+
+
+
+	    </div>
+	    <div class="col-md-4">
+
+	      <div id="Ints">
+	        <div class="IntsImg2">
+	          <div class="col-md-2">
+	          </div>
+	          <div class="col-md-8">
+	          </div>
+	          <div class="col-md-2">
+	          </div>
+	        </div>
+	        <div class="col-md-3">
+	          <!-- LEFT INFO COLUMN -->
+	          <IntsInfoNotif>
+	            <span class="label label-info">Movies</span>
+	          </IntsInfoNotif>
+	        </div>
+	        <div class="col-md-6">
+	          <!-- MIDDLE INFO COLUMN -->
+	          <center><IntsName>The Dark Knight Rises</IntsName></center>
+	        </div>
+	        <div class="col-md-3">
+	          <!-- RIGHT INFO COLUMN -->
+	          <IntsBadge>
+	            <span class="badge">239</span>
+	          </IntsBadge>
+	        </div>
+	      </div>
+
+	      <br>
+
+	      <div id="Ints">
+	        <div class="IntsImg5">
+	          <div class="col-md-2">
+	          </div>
+	          <div class="col-md-8">
+	          </div>
+	          <div class="col-md-2">
+	          </div>
+	        </div>
+	        <div class="col-md-3">
+	          <!-- LEFT INFO COLUMN -->
+	          <IntsInfoNotif>
+	            <span class="label label-info">Outdoors</span>
+	          </IntsInfoNotif>
+	        </div>
+	        <div class="col-md-6">
+	          <!-- MIDDLE INFO COLUMN -->
+	          <center><IntsName>Group Running</IntsName></center>
+	        </div>
+	        <div class="col-md-3">
+	          <!-- RIGHT INFO COLUMN -->
+	          <IntsBadge>
+	            <span class="badge">622</span>
+	          </IntsBadge>
+	        </div>
+	      </div>
+
+
+	    </div>
+	    <div class="col-md-4">
+
+	      <div id="Ints">
+	        <div class="IntsImg3">
+	          <div class="col-md-2">
+	          </div>
+	          <div class="col-md-8">
+	          </div>
+	          <div class="col-md-2">
+	          </div>
+	        </div>
+	        <div class="col-md-3">
+	          <!-- LEFT INFO COLUMN -->
+	          <IntsInfoNotif>
+	            <span class="label label-info">Sports</span>
+	          </IntsInfoNotif>
+	        </div>
+	        <div class="col-md-6">
+	          <!-- MIDDLE INFO COLUMN -->
+	          <center><IntsName>Toronto Maple Leafs</IntsName></center>
+	        </div>
+	        <div class="col-md-3">
+	          <!-- RIGHT INFO COLUMN -->
+	          <IntsBadge>
+	            <span class="badge">842</span>
+	          </IntsBadge>
+	        </div>
+	      </div>
+
+	      <br>
+
+		  <div id="Ints">
+	        <div class="IntsImg6">
+	          <div class="col-md-2">
+	          </div>
+	          <div class="col-md-8">
+	          </div>
+	          <div class="col-md-2">
+	          </div>
+	        </div>
+	        <div class="col-md-3">
+	          <!-- LEFT INFO COLUMN -->
+	          <IntsInfoNotif>
+	            <span class="label label-info">Gaming</span>
+	          </IntsInfoNotif>
+	        </div>
+	        <div class="col-md-6">
+	          <!-- MIDDLE INFO COLUMN -->
+	          <center><IntsName>Minecraft</IntsName></center>
+	        </div>
+	        <div class="col-md-3">
+	          <!-- RIGHT INFO COLUMN -->
+	          <IntsBadge>
+	            <span class="badge">785</span>
+	          </IntsBadge>
+	        </div>
+	      </div>
+
+	    </div>
+
+	</div>
+
+
+
+
+
+
+
+	<div class="row">
+
+		<br>
+		<br>
+		<br>
+
+		<body>
+		<% @interests.each do |inter| %>
+		  <%= inter.name %><%= link_to 'Destroy', inter, method: :delete %><br>
+		<% end %>
+		</body>
+
+	</div>
+
+
+</div>
+

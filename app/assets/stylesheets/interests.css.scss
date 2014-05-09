@@ -1,3 +1,225 @@
 // Place all the styles related to the Interests controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*  TEXT STYLING */
+TitleHead {
+  font-family: 'Yellowtail', cursive;
+  float: center;
+  font-size: 60px;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+/* INTEREST TABS */
+IntsName {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 10px;
+	line-height: 40px;
+}
+IntsBadge {
+	font-size: 12px;
+	line-height: 40px;
+}
+IntsBadge>.badge {
+	vertical-align: middle;
+}
+IntsInfoNotif {
+	vertical-align: middle;
+	line-height: 40px;
+	font-size: 12px;
+}
+IntsInfoNotif .label:hover {
+  background: #FFAF40;
+}
+#IntsStar {
+  vertical-align: middle;
+  line-height: 40px;
+  color: #FCF928;
+}
+#Ints {
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 160px;
+  margin: 0px auto; 
+  padding: 0px; 
+  border-radius: 4px;
+  background-color: white; 
+}
+.IntsImg1 {
+  width: 100%;
+  height: 120px;
+  background-image: url("http://www.youredm.com/wp-content/uploads/2014/03/4784931.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+.IntsImg2 {
+  width: 100%;
+  height: 120px;
+  background-image: url("http://www.saynotes.com/wp-content/uploads/2012/07/the-dark-knight-rises-groupshot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+.IntsImg3 {
+  width: 100%;
+  height: 120px;
+  background-image: url("http://www.cbc.ca/sports-content/hockey/opinion/assets_c/2013/10/620-reimer-main-thumb-620xauto-330043.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+.IntsImg4 {
+  width: 100%;
+  height: 120px;
+  background-image: url("https://www.ocoos.com/images/product/509414141eaa4_skydive01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+.IntsImg5 {
+  width: 100%;
+  height: 120px;
+  background-image: url("http://2.bp.blogspot.com/-9ZIvA-Op7GA/UegnpYvMZnI/AAAAAAAAAT0/ExO8dwICvOA/s1600/Running+Shoes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+.IntsImg6 {
+  width: 100%;
+  height: 120px;
+  background-image: url("http://tryminecraftsforfree.com/wp-content/uploads/2014/03/play-minecraft-for-free.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+
+
+
+/* SIDEBAR */
+#wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+  top: 0;
+  left: 0;
+}
+#sidebar-wrapper {
+  margin-left: -250px;
+  top: 0;
+  left: 250px;
+  width: 250px;
+  background: #000;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+#page-content-wrapper {
+  width: 100%;
+}
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
+}
+.sidebar-nav li a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+.content-header {
+  height: 65px;
+  line-height: 65px;
+}
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block;
+}
+#menu-toggle {
+  display: none;
+}
+.inset {
+  padding: 20px;
+}
+@media (max-width:767px) {
+	#wrapper {
+	  padding-left: 0;
+	}
+	#sidebar-wrapper {
+	  left: 0;
+	}
+	#wrapper.active {
+	  position: relative;
+	  left: 250px;
+	}
+	#wrapper.active #sidebar-wrapper {
+	  left: 250px;
+	  width: 250px;
+	  transition: all 0.4s ease 0s;
+	}
+	#menu-toggle {
+	  display: inline-block;
+	}
+	.inset {
+	  padding: 15px;
+	}
+}
+
+.form-control {
+	width: 80%;
+}
