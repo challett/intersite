@@ -16,24 +16,24 @@ TitleHead {
 
 /* INTEREST TABS */
 IntsName {
+  font-family: 'Francois One', sans-serif;
 	text-align: center;
 	vertical-align: middle;
-	font-size: 10px;
+	font-size: 20px;
 	line-height: 40px;
 }
-IntsBadge {
+.IntsBadge {
 	font-size: 12px;
-	line-height: 40px;
+	line-height: 110px;
+  visibility: hidden;
 }
-IntsBadge>.badge {
+.IntsInfoNotif {
 	vertical-align: middle;
+	line-height: 110px;
+	font-size: 14px;
+  visibility: hidden;
 }
-IntsInfoNotif {
-	vertical-align: middle;
-	line-height: 40px;
-	font-size: 12px;
-}
-IntsInfoNotif .label:hover {
+.IntsInfoNotif .label:hover {
   background: #FFAF40;
 }
 #IntsStar {
@@ -41,7 +41,7 @@ IntsInfoNotif .label:hover {
   line-height: 40px;
   color: #FCF928;
 }
-#Ints {
+.Ints {
   top: 0;
   left: 0;
   width: 100%; 
@@ -61,6 +61,15 @@ IntsInfoNotif .label:hover {
   -moz-border-radius: 0px;
   -webkit-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px; 
+}
+.IntsImg1:hover {
+  transition: all 0.2s;
+}
+.IntsImg1:hover .IntsInfoNotif{
+  visibility: visible;
+}
+.IntsImg1:hover .IntsBadge{
+  visibility: visible;
 }
 .IntsImg2 {
   width: 100%;

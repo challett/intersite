@@ -8,10 +8,12 @@ class User < ActiveRecord::Base
                     uniqueness: { case_sensitive: false } 
                     
   has_secure_password
-  has_and_belongs_to_many :interests
+  has_many :user_interests
   has_many :user_locations
   has_many :user_schools
   has_many :user_workplaces
+  
+  has_many :interests, :through => :user_interests
   has_many :workplaces, :through => :user_workplaces
   has_many :schools, :through => :user_schools
   has_many :locations, :through => :user_locations
