@@ -51,6 +51,13 @@ IntsName {
   border-radius: 4px;
   background-color: white; 
 }
+.Ints:hover {
+  -moz-box-shadow:    0px 0px 6px #000000;
+  -webkit-box-shadow: 0px 0px 6px #000000;
+  box-shadow:         0px 0px 6px #000000;
+  transition: 0.2s;
+}
+
 .IntsImg1 {
   width: 100%;
   height: 120px;
@@ -62,15 +69,13 @@ IntsName {
   -webkit-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px; 
 }
-.IntsImg1:hover {
-  transition: all 0.2s;
-}
 .IntsImg1:hover .IntsInfoNotif{
   visibility: visible;
 }
 .IntsImg1:hover .IntsBadge{
   visibility: visible;
 }
+
 .IntsImg2 {
   width: 100%;
   height: 120px;
@@ -82,6 +87,13 @@ IntsName {
   -webkit-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px; 
 }
+.IntsImg2:hover .IntsInfoNotif{
+  visibility: visible;
+}
+.IntsImg2:hover .IntsBadge{
+  visibility: visible;
+}
+
 .IntsImg3 {
   width: 100%;
   height: 120px;
@@ -93,6 +105,13 @@ IntsName {
   -webkit-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px; 
 }
+.IntsImg3:hover .IntsInfoNotif{
+  visibility: visible;
+}
+.IntsImg3:hover .IntsBadge{
+  visibility: visible;
+}
+
 .IntsImg4 {
   width: 100%;
   height: 120px;
@@ -104,6 +123,13 @@ IntsName {
   -webkit-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px; 
 }
+.IntsImg4:hover .IntsInfoNotif{
+  visibility: visible;
+}
+.IntsImg4:hover .IntsBadge{
+  visibility: visible;
+}
+
 .IntsImg5 {
   width: 100%;
   height: 120px;
@@ -115,6 +141,13 @@ IntsName {
   -webkit-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px; 
 }
+.IntsImg5:hover .IntsInfoNotif{
+  visibility: visible;
+}
+.IntsImg5:hover .IntsBadge{
+  visibility: visible;
+}
+
 .IntsImg6 {
   width: 100%;
   height: 120px;
@@ -125,6 +158,66 @@ IntsName {
   -moz-border-radius: 0px;
   -webkit-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px; 
+}
+.IntsImg6:hover .IntsInfoNotif{
+  visibility: visible;
+}
+.IntsImg6:hover .IntsBadge{
+  visibility: visible;
+}
+
+.IntsImg7 {
+  width: 100%;
+  height: 120px;
+  background-image: url("http://getoutcanada.com/static/uploads/posts/raps-highfive.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+.IntsImg7:hover .IntsInfoNotif{
+  visibility: visible;
+}
+.IntsImg7:hover .IntsBadge{
+  visibility: visible;
+}
+
+.IntsImg8 {
+  width: 100%;
+  height: 120px;
+  background-image: url("http://i.cdn.turner.com/v5cache/TNT/Images/i89/tnt_angelsanddemons_587x295.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+.IntsImg8:hover .IntsInfoNotif{
+  visibility: visible;
+}
+.IntsImg8:hover .IntsBadge{
+  visibility: visible;
+}
+
+.IntsImg9 {
+  width: 100%;
+  height: 120px;
+  background-image: url("http://media.philly.com/images/071013-throne-600.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px; 
+}
+.IntsImg9:hover .IntsInfoNotif{
+  visibility: visible;
+}
+.IntsImg9:hover .IntsBadge{
+  visibility: visible;
 }
 
 
