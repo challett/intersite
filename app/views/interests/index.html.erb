@@ -328,7 +328,7 @@ $("#menu-toggle").click(function(e) {
 
 		<body>
 		<% @interests.each do |inter| %>
-		  <%= inter.name %><%= link_to 'Destroy', inter, method: :delete %><br>
+		  <%= inter.name %><%= link_to 'Destroy', inter, method: :delete %><%= link_to 'Edit', edit_interest_path(inter) %><br>
 		<% end %>
 		</body>
 

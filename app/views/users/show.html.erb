@@ -1,106 +1,112 @@
-<div id="profile-wrap">
-  <div id="profile">
-    <%= gravatar_for @user %> 
-    <UserName> <%= @user.name %> </UserName> <br>
+<!-- <div class="row">
+  <div style="background:url(http://static.simpledesktops.com/uploads/desktops/2014/04/24/rainyDay_2880x1800.png) no-repeat center center fixed; padding-top:260px; top:0; left:0; height:350px; position:absolute; width:100%; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; -moz-box-shadow:inset 0px 0px 10px #000000; -webkit-box-shadow:inset 0px 0px 10px #000000; box-shadow:inset 0px 0px 10px #000000; z-index:-99;">
   </div>
-</div>
-
-
+</div> -->
 
 <br>
-<br> 
 <br>
-<br> 
 <br>
-<br> 
 <br>
-<br> 
 <br>
-<br> 
 <br>
-<br> 
 <br>
-<br> 
 <br>
-<br> 
 <br>
-<br> 
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="profile-wrap" style="background:url(<%= @user.picture_url %>) no-repeat center center fixed; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;">
+
+</div> 
+
 
 
 <%= content_tag(:div, notice, class: "alert alert-success alert-dismissable") if notice != nil %>
 
 
 
-<div class="row">
-  <div class="col-md-3">
+<div class="col-md-3">
 <!-- RIGHT COLUMN -->
-    <div class="list-group">
-      <a href="#" class="list-group-item">
-        <span class="badge">98</span>
-        Friends
-      </a> 
-      <a href="/interests" class="list-group-item">
-        <span class="badge">107</span>
-        Interests
-      </a>
-      <a href="#" class="list-group-item">
-        <span class="badge">9</span>
-        Events
-      </a>
-    </div>
-    <div class="list-group">
-        <li class="list-group-item">Trending</li>
-      <% (1..10).each do |f| %>
-      <a href="#" class="list-group-item">
-        <span class="badge">##</span>
-        Interest Name
-      </a>
-      <% end %> 
-    </div>
+  <div class="list-group">
+    <a href="#" class="list-group-item">
+      <span class="badge">98</span>
+      Friends
+    </a> 
+    <a href="/interests" class="list-group-item">
+      <span class="badge">107</span>
+      Interests
+    </a>
+    <a href="#" class="list-group-item">
+      <span class="badge">9</span>
+      Events
+    </a>
   </div>
-  
-  
-  <div class="col-md-6">
+  <div class="list-group">
+      <li class="list-group-item">Trending</li>
+    <% (1..10).each do |f| %>
+    <a href="#" class="list-group-item">
+      <span class="badge">##</span>
+      Interest Name
+    </a>
+    <% end %> 
+  </div>
+</div>
+
+
+<div class="col-md-6">
 <!-- MIDDLE COLUMN -->
-    <div class="jumbotron">
-    <h2>Basic Info</h2>
-    <p>
 
-      <strong>Email</strong>
-      <%= @user.email %>
-    <br>
-      <strong>Attended</strong>
-      <% if @user.schools.first != nil %>
-        <%= @user.schools.first.name %>
-      <% else %>
-        Unknown
-      <% end %> 
-    <br>
-      <strong>Works at</strong>
-      <% if @user.workplaces.first != nil %>
-        <%= @user.workplaces.first.name %>
-      <% else %>
-        Unknown
-      <% end %> 
-    <br>
-      <strong>Lives in</strong>
-      <% if @user.locations.first != nil %>
-        <%= @user.locations.first.name %>
-      <% else %>
-        Unknown
-      <% end %>
+<div id="profile">
+  <%= gravatar_for @user %> 
+  <UserName> <%= @user.name %> </UserName> <br>
+</div>
 
-    </p>
-    <h2> My Interests</h2>
-    <% @user.interests.each do |interest| %>
-      <p>
-        <%= interest.name %>
-      </p>
+<br>
+
+<div class="jumbotron">
+  <h2>Basic Info</h2>
+  <p>
+
+    <strong>Email</strong>
+    <%= @user.email %>
+  <br>
+    <strong>Attended</strong>
+    <% if @user.schools.first != nil %>
+      <%= @user.schools.first.name %>
+    <% else %>
+      Unknown
+    <% end %> 
+  <br>
+    <strong>Works at</strong>
+    <% if @user.workplaces.first != nil %>
+      <%= @user.workplaces.first.name %>
+    <% else %>
+      Unknown
+    <% end %> 
+  <br>
+    <strong>Lives in</strong>
+    <% if @user.locations.first != nil %>
+      <%= @user.locations.first.name %>
+    <% else %>
+      Unknown
     <% end %>
-    <%= link_to 'Edit', edit_user_path(@user) %> |
-    <%= link_to 'Back', users_path %>
-  </div> 
+
+  </p>
+  <h2> My Interests</h2>
+  <% @user.interests.each do |interest| %>
+    <p>
+      <%= interest.name %>
+    </p>
+  <% end %>
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', users_path %>
+</div> 
 
 
 
@@ -108,176 +114,175 @@
 <br>
 
 
-  </div>
-  <div class="col-md-3">
+</div>
+<div class="col-md-3">
 <!-- RIGHT COLUMN -->
 
 
-  <!-- FAVORITE INTERESTS -->
-      <div id="FavInts">
-        <div class="FavIntsImg1">
-          <div class="col-md-2">
-            <FavIntsInfoNotif>
-              <span class="label label-danger">New</span>
-            </FavIntsInfoNotif>
-          </div>
-          <div class="col-md-8">
-          </div>
-          <div class="col-md-2">
-            <div id="FavIntsStar"><i class="fa fa-star fa-lg"></i></div>
-          </div>
-        </div>
+<!-- FAVORITE INTERESTS -->
+    <div id="FavInts">
+      <div class="FavIntsImg1">
         <div class="col-md-2">
-          <!-- LEFT INFO COLUMN -->
           <FavIntsInfoNotif>
-            <span class="label label-info">Music</span>
+            <span class="label label-danger">New</span>
           </FavIntsInfoNotif>
         </div>
         <div class="col-md-8">
-          <!-- MIDDLE INFO COLUMN -->
-          <center><FavIntsName>deaudmau5</FavIntsName></center>
         </div>
         <div class="col-md-2">
-          <!-- RIGHT INFO COLUMN -->
-          <FavIntsBadge>
-            <span class="badge">683</span>
-          </FavIntsBadge>
+          <div id="FavIntsStar"><i class="fa fa-star fa-lg"></i></div>
         </div>
       </div>
+      <div class="col-md-2">
+        <!-- LEFT INFO COLUMN -->
+        <FavIntsInfoNotif>
+          <span class="label label-info">Music</span>
+        </FavIntsInfoNotif>
+      </div>
+      <div class="col-md-8">
+        <!-- MIDDLE INFO COLUMN -->
+        <center><FavIntsName>deaudmau5</FavIntsName></center>
+      </div>
+      <div class="col-md-2">
+        <!-- RIGHT INFO COLUMN -->
+        <FavIntsBadge>
+          <span class="badge">683</span>
+        </FavIntsBadge>
+      </div>
+    </div>
 
-      <br>
+    <br>
 
-      <div id="FavInts">
-        <div class="FavIntsImg2">
-          <div class="col-md-2">
-            <!-- <FavIntsInfoNotif>
-              <span class="label label-danger">New</span>
-            </FavIntsInfoNotif> -->
-          </div>
-          <div class="col-md-8">
-          </div>
-          <div class="col-md-2">
-            <div id="FavIntsStar"><i class="fa fa-star fa-lg"></i></div>
-          </div>
+    <div id="FavInts">
+      <div class="FavIntsImg2">
+        <div class="col-md-2">
+          <!-- <FavIntsInfoNotif>
+            <span class="label label-danger">New</span>
+          </FavIntsInfoNotif> -->
+        </div>
+        <div class="col-md-8">
         </div>
         <div class="col-md-2">
-          <!-- LEFT INFO COLUMN -->
+          <div id="FavIntsStar"><i class="fa fa-star fa-lg"></i></div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <!-- LEFT INFO COLUMN -->
+        <FavIntsInfoNotif>
+          <span class="label label-info">Movies</span>
+        </FavIntsInfoNotif>
+      </div>
+      <div class="col-md-8">
+        <!-- MIDDLE INFO COLUMN -->
+        <center><FavIntsName>The Dark Knight Rises</FavIntsName></center>
+      </div>
+      <div class="col-md-2">
+        <!-- RIGHT INFO COLUMN -->
+        <FavIntsBadge>
+          <span class="badge">239</span>
+        </FavIntsBadge>
+      </div>
+    </div>
+
+    <br> 
+
+    <div id="FavInts">
+      <div class="FavIntsImg3">
+        <div class="col-md-2">
           <FavIntsInfoNotif>
-            <span class="label label-info">Movies</span>
+            <span class="label label-danger">New</span>
           </FavIntsInfoNotif>
         </div>
         <div class="col-md-8">
-          <!-- MIDDLE INFO COLUMN -->
-          <center><FavIntsName>The Dark Knight Rises</FavIntsName></center>
         </div>
         <div class="col-md-2">
-          <!-- RIGHT INFO COLUMN -->
-          <FavIntsBadge>
-            <span class="badge">239</span>
-          </FavIntsBadge>
+          <div id="FavIntsStar"><i class="fa fa-star fa-lg"></i></div>
         </div>
       </div>
+      <div class="col-md-2">
+        <!-- LEFT INFO COLUMN -->
+        <FavIntsInfoNotif>
+          <span class="label label-info">Sports</span>
+        </FavIntsInfoNotif>
+      </div>
+      <div class="col-md-8">
+        <!-- MIDDLE INFO COLUMN -->
+        <center><FavIntsName>Toronto Maple Leafs</FavIntsName></center>
+      </div>
+      <div class="col-md-2">
+        <!-- RIGHT INFO COLUMN -->
+        <FavIntsBadge>
+          <span class="badge">842</span>
+        </FavIntsBadge>
+      </div>
+    </div>
 
-      <br> 
+    <br>
 
-      <div id="FavInts">
-        <div class="FavIntsImg3">
-          <div class="col-md-2">
-            <FavIntsInfoNotif>
-              <span class="label label-danger">New</span>
-            </FavIntsInfoNotif>
-          </div>
-          <div class="col-md-8">
-          </div>
-          <div class="col-md-2">
-            <div id="FavIntsStar"><i class="fa fa-star fa-lg"></i></div>
-          </div>
-        </div>
+    <div id="FavInts">
+      <div class="FavIntsImg4">
         <div class="col-md-2">
-          <!-- LEFT INFO COLUMN -->
           <FavIntsInfoNotif>
-            <span class="label label-info">Sports</span>
+            <span class="label label-danger">New</span>
           </FavIntsInfoNotif>
         </div>
         <div class="col-md-8">
-          <!-- MIDDLE INFO COLUMN -->
-          <center><FavIntsName>Toronto Maple Leafs</FavIntsName></center>
         </div>
         <div class="col-md-2">
-          <!-- RIGHT INFO COLUMN -->
-          <FavIntsBadge>
-            <span class="badge">842</span>
-          </FavIntsBadge>
+          <div id="FavIntsStar"><i class="fa fa-star fa-lg"></i></div>
         </div>
       </div>
+      <div class="col-md-2">
+        <!-- LEFT INFO COLUMN -->
+        <FavIntsInfoNotif>
+          <span class="label label-info">Extreme</span>
+        </FavIntsInfoNotif>
+      </div>
+      <div class="col-md-8">
+        <!-- MIDDLE INFO COLUMN -->
+        <center><FavIntsName>Sky Diving</FavIntsName></center>
+      </div>
+      <div class="col-md-2">
+        <!-- RIGHT INFO COLUMN -->
+        <FavIntsBadge>
+          <span class="badge">967</span>
+        </FavIntsBadge>
+      </div>
+    </div>
 
-      <br>
+    <br>
 
-      <div id="FavInts">
-        <div class="FavIntsImg4">
-          <div class="col-md-2">
-            <FavIntsInfoNotif>
-              <span class="label label-danger">New</span>
-            </FavIntsInfoNotif>
-          </div>
-          <div class="col-md-8">
-          </div>
-          <div class="col-md-2">
-            <div id="FavIntsStar"><i class="fa fa-star fa-lg"></i></div>
-          </div>
-        </div>
+    <div id="FavInts">
+      <div class="FavIntsImg5">
         <div class="col-md-2">
-          <!-- LEFT INFO COLUMN -->
-          <FavIntsInfoNotif>
-            <span class="label label-info">Extreme</span>
-          </FavIntsInfoNotif>
+          <!-- <FavIntsInfoNotif>
+            <span class="label label-danger">New</span>
+          </FavIntsInfoNotif> -->
         </div>
         <div class="col-md-8">
-          <!-- MIDDLE INFO COLUMN -->
-          <center><FavIntsName>Sky Diving</FavIntsName></center>
         </div>
         <div class="col-md-2">
-          <!-- RIGHT INFO COLUMN -->
-          <FavIntsBadge>
-            <span class="badge">967</span>
-          </FavIntsBadge>
+          <div id="FavIntsStar"><i class="fa fa-star fa-lg"></i></div>
         </div>
       </div>
-
-      <br>
-
-      <div id="FavInts">
-        <div class="FavIntsImg5">
-          <div class="col-md-2">
-            <!-- <FavIntsInfoNotif>
-              <span class="label label-danger">New</span>
-            </FavIntsInfoNotif> -->
-          </div>
-          <div class="col-md-8">
-          </div>
-          <div class="col-md-2">
-            <div id="FavIntsStar"><i class="fa fa-star fa-lg"></i></div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <!-- LEFT INFO COLUMN -->
-          <FavIntsInfoNotif>
-            <span class="label label-info">Outdoors</span>
-          </FavIntsInfoNotif>
-        </div>
-        <div class="col-md-8">
-          <!-- MIDDLE INFO COLUMN -->
-          <center><FavIntsName>Group Running</FavIntsName></center>
-        </div>
-        <div class="col-md-2">
-          <!-- RIGHT INFO COLUMN -->
-          <FavIntsBadge>
-            <span class="badge">622</span>
-          </FavIntsBadge>
-        </div>
+      <div class="col-md-2">
+        <!-- LEFT INFO COLUMN -->
+        <FavIntsInfoNotif>
+          <span class="label label-info">Outdoors</span>
+        </FavIntsInfoNotif>
       </div>
+      <div class="col-md-8">
+        <!-- MIDDLE INFO COLUMN -->
+        <center><FavIntsName>Group Running</FavIntsName></center>
+      </div>
+      <div class="col-md-2">
+        <!-- RIGHT INFO COLUMN -->
+        <FavIntsBadge>
+          <span class="badge">622</span>
+        </FavIntsBadge>
+      </div>
+    </div>
 
-      <br>
+    <br>
 
-  </div> 
-</div>
+</div> 

@@ -1,0 +1,9 @@
+<%= @interest.name %>
+<%= simple_form_for(@interest) do |f| %>
+  <div class="input-group">
+    <%= f.text_field :picture_url, :placeholder => "Cover URL"%>
+  </div>
+    <div class="actions">
+    <%= f.submit class: "btn btn-large btn-primary" %>
+  </div>
+<% end %>

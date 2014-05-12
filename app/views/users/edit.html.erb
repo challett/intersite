@@ -1,11 +1,34 @@
 <h1>Basic Info</h1>
 <%= render 'form' %>
-<!--
-<h1>Interests</h1>
-<% @user.interests.each do |interest| %>
-    <%= interest.name %><br>
+
+<h2> Advanced Info </h2>
+<%= simple_form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div class = "alert alert-danger">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+  <div class="input-group">
+    <%= f.text_field :picture_url, :placeholder => "Cover URL"%>
+  </div>
+  <%= f.association :schools %>
+  <%= f.association :locations %>
+  <%= f.association :workplaces %>
+
+  <div class="actions">
+    <%= f.submit class: "btn btn-large btn-primary" %>
+  </div>
+
+
 <% end %>
--->
 
 <%= simple_form_for @user do |f| %>
 	<%= f.association :interests, :as => :check_boxes %>
