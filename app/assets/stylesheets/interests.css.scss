@@ -12,16 +12,27 @@ TitleHead {
   vertical-align: middle;
   text-align: center;
 }
+CatTitle {
+  font-family: 'Roboto', sans-serif;
+  float: center;
+  font-size: 10px;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+}
+IntsName {
+  font-family: 'Francois One', sans-serif;
+  font-style: bold;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 40px;
+}
+
 
 
 /* INTEREST TABS */
-IntsName {
-  font-family: 'Francois One', sans-serif;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 20px;
-	line-height: 40px;
-}
+
 .IntsBadge {
 	font-size: 12px;
 	line-height: 110px;
@@ -41,27 +52,56 @@ IntsName {
   line-height: 40px;
   color: #FCF928;
 }
+
+.IntItem{
+  height: 160px;
+  width: 100%;
+}
+.IntItem:hover .IntsCat {
+  z-index: 0;
+  margin-top: -180px;
+  transition: 0.1s;
+}
+.IntsCat {
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 20px;
+  margin-top: -160px; 
+  padding: 0px; 
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px;   
+  background-color: #CFCFCF;
+  z-index: -100;
+  position: relative;
+}
+.IntsCat:hover {
+  background-color: #FFA53D;
+}
+
 .Ints {
   top: 0;
   left: 0;
   width: 100%; 
   height: 160px;
-  margin: 0px auto; 
+  margin-top: 20px; 
   padding: 0px; 
   border-radius: 4px;
-  background-color: white; 
+  background-color: white;
 }
-.Ints:hover {
+/* .Ints:hover {
   -moz-box-shadow:    0px 0px 6px #000000;
   -webkit-box-shadow: 0px 0px 6px #000000;
   box-shadow:         0px 0px 6px #000000;
-  transition: 0.2s;
-}
+} */
 
-.IntsImg1 {
+
+
+
+.IntsImg {
   width: 100%;
   height: 120px;
-  background-image: url("http://www.youredm.com/wp-content/uploads/2014/03/4784931.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -69,175 +109,12 @@ IntsName {
   -webkit-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px; 
 }
-.IntsImg1:hover .IntsInfoNotif{
+.IntsImg:hover .IntsInfoNotif{
   visibility: visible;
 }
-.IntsImg1:hover .IntsBadge{
+.IntsImg:hover .IntsBadge{
   visibility: visible;
 }
-
-.IntsImg2 {
-  width: 100%;
-  height: 120px;
-  background-image: url("http://www.saynotes.com/wp-content/uploads/2012/07/the-dark-knight-rises-groupshot.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px; 
-}
-.IntsImg2:hover .IntsInfoNotif{
-  visibility: visible;
-}
-.IntsImg2:hover .IntsBadge{
-  visibility: visible;
-}
-
-.IntsImg3 {
-  width: 100%;
-  height: 120px;
-  background-image: url("http://www.cbc.ca/sports-content/hockey/opinion/assets_c/2013/10/620-reimer-main-thumb-620xauto-330043.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px; 
-}
-.IntsImg3:hover .IntsInfoNotif{
-  visibility: visible;
-}
-.IntsImg3:hover .IntsBadge{
-  visibility: visible;
-}
-
-.IntsImg4 {
-  width: 100%;
-  height: 120px;
-  background-image: url("https://www.ocoos.com/images/product/509414141eaa4_skydive01.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px; 
-}
-.IntsImg4:hover .IntsInfoNotif{
-  visibility: visible;
-}
-.IntsImg4:hover .IntsBadge{
-  visibility: visible;
-}
-
-.IntsImg5 {
-  width: 100%;
-  height: 120px;
-  background-image: url("http://2.bp.blogspot.com/-9ZIvA-Op7GA/UegnpYvMZnI/AAAAAAAAAT0/ExO8dwICvOA/s1600/Running+Shoes.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px; 
-}
-.IntsImg5:hover .IntsInfoNotif{
-  visibility: visible;
-}
-.IntsImg5:hover .IntsBadge{
-  visibility: visible;
-}
-
-.IntsImg6 {
-  width: 100%;
-  height: 120px;
-  background-image: url("http://tryminecraftsforfree.com/wp-content/uploads/2014/03/play-minecraft-for-free.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px; 
-}
-.IntsImg6:hover .IntsInfoNotif{
-  visibility: visible;
-}
-.IntsImg6:hover .IntsBadge{
-  visibility: visible;
-}
-
-.IntsImg7 {
-  width: 100%;
-  height: 120px;
-  background-image: url("http://getoutcanada.com/static/uploads/posts/raps-highfive.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px; 
-}
-.IntsImg7:hover .IntsInfoNotif{
-  visibility: visible;
-}
-.IntsImg7:hover .IntsBadge{
-  visibility: visible;
-}
-
-.IntsImg8 {
-  width: 100%;
-  height: 120px;
-  background-image: url("http://i.cdn.turner.com/v5cache/TNT/Images/i89/tnt_angelsanddemons_587x295.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px; 
-}
-.IntsImg8:hover .IntsInfoNotif{
-  visibility: visible;
-}
-.IntsImg8:hover .IntsBadge{
-  visibility: visible;
-}
-
-.IntsImg9 {
-  width: 100%;
-  height: 120px;
-  background-image: url("http://media.philly.com/images/071013-throne-600.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px; 
-}
-.IntsImg9:hover .IntsInfoNotif{
-  visibility: visible;
-}
-.IntsImg9:hover .IntsBadge{
-  visibility: visible;
-}
-
-.IntsImg10 {
-  width: 100%;
-  height: 120px;
-  background-image: url("http://www.nova-labs.org/blog/wp-content/uploads/2014/02/tardis-in-space-tardis-6289810-1280-768.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px; 
-}
-.IntsImg10:hover .IntsInfoNotif{
-  visibility: visible;
-}
-.IntsImg10:hover .IntsBadge{
-  visibility: visible;
-}
-
 
 
 /* SIDEBAR */
