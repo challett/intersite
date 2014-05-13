@@ -56,10 +56,143 @@ SubContext {
   font-size: 20px;
   padding-bottom: 20px;
 }
+FavIntsNameCol {
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 40px;
+  opacity: 1;
+}
 
 
 
 /* FAVORITE INTERESTS */
+.FavIntsContainer {
+  border-radius: 4px;
+}
+.FavIntsCol {
+  top: 0;
+  left: 0;
+  width: 350px; 
+  height: 40px;
+  margin: 0px auto; 
+  padding: 0px; 
+  transition: all .2s;
+  /* border-radius: 4px; */
+  /* background-color: white; */
+}
+.FavIntsCol:hover {
+  height: 140px;
+}
+.FavIntsCol:hover .FavIntsColTop {
+  opacity: 0;
+}
+.FavIntsCol:hover .FavIntsColMid {
+  opacity: 0;
+}
+.FavIntsCol:hover .FavIntsColEnd {
+  opacity: 0;
+}
+.FavIntsColTop {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
+  opacity: 0.5;
+}
+.FavIntsColMid {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.5;
+}
+.FavIntsColEnd {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
+  opacity: 0.5;
+}
+.FavIntsImgCol1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("http://www.youredm.com/wp-content/uploads/2014/03/4784931.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
+  transition: all .2s;
+}
+.FavIntsImgCol1:hover {
+  -moz-box-shadow:    inset 0px 0px 7px #000000;
+  -webkit-box-shadow: inset 0px 0px 7px #000000;
+  box-shadow:         inset 0px 0px 7px #000000;
+}
+.FavIntsImgCol2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("http://tryminecraftsforfree.com/wp-content/uploads/2014/03/play-minecraft-for-free.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all .2s;
+}
+.FavIntsImgCol2:hover {
+  -moz-box-shadow:    inset 0px 0px 7px #000000;
+  -webkit-box-shadow: inset 0px 0px 7px #000000;
+  box-shadow:         inset 0px 0px 7px #000000;
+}
+.FavIntsImgCol3 {
+  width: 100%;
+  height: 100%;
+  background-image: url("http://2.bp.blogspot.com/-9ZIvA-Op7GA/UegnpYvMZnI/AAAAAAAAAT0/ExO8dwICvOA/s1600/Running+Shoes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all .2s;
+}
+.FavIntsImgCol3:hover {
+  -moz-box-shadow:    inset 0px 0px 7px #000000;
+  -webkit-box-shadow: inset 0px 0px 7px #000000;
+  box-shadow:         inset 0px 0px 7px #000000;
+}
+.FavIntsImgCol4 {
+  width: 100%;
+  height: 100%;
+  background-image: url("http://getoutcanada.com/static/uploads/posts/raps-highfive.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all .2s;
+}
+.FavIntsImgCol4:hover {
+  -moz-box-shadow:    inset 0px 0px 7px #000000;
+  -webkit-box-shadow: inset 0px 0px 7px #000000;
+  box-shadow:         inset 0px 0px 7px #000000;
+}
+.FavIntsImgCol5 {
+  width: 100%;
+  height: 100%;
+  background-image: url("http://www.nova-labs.org/blog/wp-content/uploads/2014/02/tardis-in-space-tardis-6289810-1280-768.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px; 
+  transition: all .2s;
+}
+.FavIntsImgCol5:hover {
+  -moz-box-shadow:    inset 0px 0px 7px #000000;
+  -webkit-box-shadow: inset 0px 0px 7px #000000;
+  box-shadow:         inset 0px 0px 7px #000000;
+}
+
 
 #FavInts {
   top: 0;
@@ -159,6 +292,7 @@ SubContext {
   -moz-box-shadow:    inset 0px 0px 10px #000000;
   -webkit-box-shadow: inset 0px 0px 10px #000000;
   box-shadow:         inset 0px 0px 10px #000000;
+  transition: all .2s;
 }
 .profile-wrap:active {
   height: 100%;
@@ -166,7 +300,6 @@ SubContext {
   -webkit-box-shadow: inset 0px 0px 0px #000000;
   box-shadow:         inset 0px 0px 0px #000000;
   position: fixed;
-  transition: 0.3s;
 }
 #left-list {
   width: 200px;
