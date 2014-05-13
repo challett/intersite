@@ -39,7 +39,7 @@
       Friends
     </a> 
     <a href="/interests" class="list-group-item">
-      <span class="badge">107</span>
+      <span class="badge"><%= @user.interests.count %></span>
       Interests
     </a>
     <a href="#" class="list-group-item">
@@ -49,10 +49,10 @@
   </div>
   <div class="list-group">
       <li class="list-group-item">Trending</li>
-    <% (1..10).each do |f| %>
+    <% Interest.all.each do |f| %>
     <a href="#" class="list-group-item">
-      <span class="badge">##</span>
-      Interest Name
+      <span class="badge"><%=f.users.count%></span>
+      <%= f.name %>
     </a>
     <% end %> 
   </div>
@@ -117,6 +117,7 @@
 </div>
 <div class="col-md-3">
 <!-- RIGHT COLUMN -->
+
 
 
 <!-- FAVORITE INTERESTS -->
@@ -224,6 +225,7 @@
     <br>
     <br>
     <br>
+
 
 
 
